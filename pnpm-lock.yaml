@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -95,8 +95,8 @@ devDependencies:
     specifier: ^3.0.1
     version: 3.0.1(eslint@8.56.0)
   eslint-plugin-perfectionist:
-    specifier: ^2.5.0
-    version: 2.5.0(astro-eslint-parser@0.16.3)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^2.6.0
+    version: 2.6.0(astro-eslint-parser@0.16.3)(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-regexp:
     specifier: ^2.2.0
     version: 2.2.0(eslint@8.56.0)
@@ -850,7 +850,7 @@ packages:
       debug: 4.3.4
       espree: 9.6.1
       globals: 13.23.0
-      ignore: 5.3.0
+      ignore: 5.3.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       minimatch: 3.1.2
@@ -3427,8 +3427,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-perfectionist@2.5.0(astro-eslint-parser@0.16.3)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-F6XXcq4mKKUe/SREoMGQqzgw6cgCgf3pFzkFfQVIGtqD1yXVpQjnhTepzhBeZfxZwgMzR9HO4yH4CUhIQ2WBcQ==}
+  /eslint-plugin-perfectionist@2.6.0(astro-eslint-parser@0.16.3)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-hee0Fu5825v+WTIhrRIJdWO8biUgm9O+c4Q1AEXIIGsXDHrLv5cdXfVUdnQcYgGtI/4X+tdFu69iVofHCIkvtw==}
     peerDependencies:
       astro-eslint-parser: ^0.16.0
       eslint: '>=8.0.0'
