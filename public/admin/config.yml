@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: ajanraj/ajanraj.github.io #replace with your githu repo
+  branch: main
+  squash_merges: true
+  open_authoring: true
+
+publish_mode: editorial_workflow
+media_folder: public/images
+public_folder: /images
+site_url: "https://ajanraj.github.io/" # your site name
+
+collections:
+  - name: post
+    label: Posts
+    folder: src/content/post/
+    create: true
+    format: frontmatter
+    preview_path: post/{{slug}}
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: publishDate, label: Date, widget: date }
+      - { name: updatedDate, label: Date, widget: date }
+      - { label: "Publish", name: "isPublish", widget: "boolean", default: true }
+      - { label: "draft", name: "isDraft", widget: "boolean", default: false }
+      - { name: body, label: Body, widget: markdown }
