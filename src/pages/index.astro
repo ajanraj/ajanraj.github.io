@@ -81,9 +81,9 @@ const quotes: { desc: string; href: string; title: string }[] = [
 		<dl class="space-y-4">
 			{
 				quotes.map(({ desc, href, title }) => (
-					<div class="flex flex-col gap-2 md:flex-row">
+					<div class="flex flex-col gap-2 text-justify md:flex-row">
 						<dt>
-							<span class="flex">
+							<span class="flex text-nowrap">
 								<a class="cactus-link" href={href} rel="noopener noreferrer" target="_blank">
 									{title}
 								</a>
