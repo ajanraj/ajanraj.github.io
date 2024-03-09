@@ -20,8 +20,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: publishDate, label: Date, widget: date }
-      - { name: updatedDate, label: Date, widget: date }
-      - { label: "Publish", name: "isPublish", widget: "boolean", default: true }
-      - { label: "draft", name: "isDraft", widget: "boolean", default: false }
+      - { name: publishDate, label: Publish_Date }
+      - { name: updatedDate, label: Updated_Date }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { name: body, label: Body, widget: markdown }
