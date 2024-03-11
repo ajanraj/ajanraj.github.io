@@ -6,6 +6,7 @@ updatedDate: 09 Mar 2024
 tags:
   - march
   - "2024"
+  - hackathon
 coverImage:
   src: ./cover.webp
   alt: Modern and energetic hackathon event
