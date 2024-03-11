@@ -16,7 +16,8 @@ coverImage:
 - Did a morning walk of 3.84km.
 - Went to attend the HackLondon Hackathon in Bush House.
 - Built a website to grade assignments. Basically, you upload the rubrics, question and answer and it will return the grade. Check it out [here](https://github.com/SavaniSawaikar/HackLondon)
-- Met nice people and had good food.
+- Met nice people (Vrinda, Abirami, Savani, Ruth) and had good food.
+- The name of our team was Team on the first day 😂.
 - To One Good Day.
 ---
 
