@@ -8,7 +8,7 @@ tags:
   - "2024"
   - hackathon
 coverImage:
-  src: ./cover.png
+  src: ./cover.jpg
   alt: A screenshot of the Hackathon website we developed
 ---
 
@@ -18,6 +18,7 @@ coverImage:
 - Went to Day 2 of Hackathon in Bush House.
 - Did some UI changes with the help of Vrinda and we finally decided on the name of our site to be Smart Assess.
 - To One Good Day.
+
 ---
 
 ## Quote for the day:
@@ -27,7 +28,5 @@ coverImage:
 ---
 
 ## Encrypted
-
-
 
 ---
