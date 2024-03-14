@@ -8,7 +8,7 @@ tags:
   - "2024"
 ---
 
-## Things I did on 10/3/2024
+## Things I did on 11/3/2024
 
 - Did a morning walk of 4.08km.
 - Meh! Boring day

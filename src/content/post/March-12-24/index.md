@@ -12,7 +12,7 @@ tags:
 
 - Did a morning walk of 3.59km.
 - Meh! Another Boring day
-- Started Working on Data Viz assignment.
+- Started Working on Data Viz assignment (Made a lot of Progress).
 - Went to see one minute pitches in London Business School. It was really a good experience to see how early stage startups work.
 ---
 
