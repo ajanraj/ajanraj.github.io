@@ -8,7 +8,7 @@ tags:
   - "2024"
   - hackathon
 coverImage:
-  src: ./cover.png
+  src: ./cover.jpg
   alt: A screenshot of the Hackathon website we developed
 ---
 
@@ -21,6 +21,7 @@ coverImage:
 - I can say these are the best two days I ever experienced after moving to London.
 
 ---
+
 ## Things I Learnt from Hackathon
 
 - Frontend Matters the most!!!
@@ -28,6 +29,7 @@ coverImage:
 - Long story short even if you have a product which doesn't work but you have a nice frontend which shows everything nice and good, You have a chance of winning 99%.
 
 ---
+
 ## Quote for the day:
 
 > The one who falls and gets up is stronger than the one who never tried.
