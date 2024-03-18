@@ -29,6 +29,35 @@ export default defineConfig({
 				name: "post",
 				label: "Posts",
 				path: "/src/content/post",
+				defaultItem: () => {
+					return {
+						// When a new post is created the title field will be set to "New post"
+						title: "New Post",
+						description: "What happened in my life on 18th March 2024. A short recap",
+						publishDate: new Date().toISOString(),
+						updatedDate:
+							new Date().getDate() +
+							" " +
+							new Date().toLocaleString("default", { month: "short" }) +
+							" " +
+							new Date().getFullYear(),
+						filename_gen:
+							new Date().toLocaleString("default", { month: "long" }) +
+							"-" +
+							new Date().getDate() +
+							"-" +
+							new Date().getFullYear(),
+					};
+				},
+				ui: {
+					filename: {
+						readonly: false,
+						slugify: (values) => {
+							// Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
+							return `${values?.filename_gen?.replace(/[^a-z^A-Z^0-9]/g, "-") || "no-topic"}/index`;
+						},
+					},
+				},
 				fields: [
 					{
 						type: "string",
