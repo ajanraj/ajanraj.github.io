@@ -37,22 +37,16 @@ jobs:
         working-directory: ${{ inputs.path }}
         run: pnpm install
         
-      # - name: Build TinaCMS
-      #   env:
-      #     TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-      #     TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-      #   run: npx tinacms build
-        
-      - name: Astro Build
-        shell: "bash"
+      - name: Build TinaCMS
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        working-directory: ${{ inputs.path }}
+        run: npx tinacms build
         
-        run: 
-          npx tinacms build
-          pnpm run build
+      - name: Astro Build
+        shell: "bash"
+        working-directory: ${{ inputs.path }}     
+        run: pnpm run build
         
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
