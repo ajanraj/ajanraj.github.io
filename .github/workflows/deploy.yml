@@ -37,10 +37,10 @@ jobs:
         working-directory: ${{ inputs.path }}
         run: pnpm install
         
-      - name: Build
+      - name: Astro Build
         shell: "bash"
         working-directory: ${{ inputs.path }}
-        run: $PACKAGE_MANAGER run build
+        run: pnpm run build
               
       - name: Build TinaCMS
         env:
