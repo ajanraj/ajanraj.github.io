@@ -46,7 +46,9 @@ export default defineConfig({
 							"-" +
 							new Date().getDate() +
 							"-" +
-							new Date().getFullYear(),
+							new Date().toLocaleString("default", { year:"2-digit"}) ,
+						tags: [new Date().toLocaleString("default", { month: "long" }), new Date().getFullYear()],
+						
 					};
 				},
 				ui: {
