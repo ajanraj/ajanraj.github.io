@@ -4,8 +4,8 @@ description: What happened in my life on 19th March 2024. A short recap
 publishDate: 2024-03-19T00:00:00.000Z
 updatedDate: 19 Mar 2024
 coverImage:
-  src: /IMG_0923.jpeg
-  alt: A street art from Leake street arches
+  src: ''
+  alt: ''
 tags:
   - '2024'
   - march
