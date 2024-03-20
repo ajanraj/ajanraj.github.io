@@ -46,9 +46,11 @@ export default defineConfig({
 							"-" +
 							new Date().getDate() +
 							"-" +
-							new Date().toLocaleString("default", { year:"2-digit"}) ,
-						tags: [new Date().toLocaleString("default", { month: "long" }), new Date().getFullYear()],
-						
+							new Date().toLocaleString("default", { year: "2-digit" }),
+						tags: [
+							new Date().toLocaleString("default", { month: "long" }).toLowerCase(),
+							String(new Date().getFullYear()),
+						],
 					};
 				},
 				ui: {
@@ -67,12 +69,30 @@ export default defineConfig({
 						label: "Title",
 						isTitle: true,
 						required: true,
+						ui: {
+							validate: (value, data) => {
+								const lengthOfTitle = data?.title?.length || 0;
+								if (lengthOfTitle >= 60) {
+									return "The description must be shorter than 60 characters";
+								}
+							},
+						},
 					},
 					{
 						type: "string",
 						name: "description",
 						label: "Description",
 						required: true,
+						ui: {
+							validate: (value, data) => {
+								const lengthOfDescription = data?.description?.length || 0;
+								if (lengthOfDescription <= 50) {
+									return "The description must be longer than 50 characters";
+								} else if (lengthOfDescription >= 160) {
+									return "The description must be shorter than 160 characters";
+								}
+							},
+						},
 					},
 					{
 						type: "datetime",
@@ -107,6 +127,7 @@ export default defineConfig({
 						name: "draft",
 						label: "Draft",
 						required: false,
+						description: "If this is checked the post will not be published",
 					},
 					{
 						type: "string",
