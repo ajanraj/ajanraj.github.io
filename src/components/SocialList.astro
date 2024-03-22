@@ -11,27 +11,32 @@ const socialLinks: {
 	link: string;
 	name: string;
 }[] = [
-{
-    friendlyName: "Github",
-    link: "https://github.com/ajanraj/",
-    name: "mdi:github",
-  },
-  {
-    friendlyName: "Twitter",
-    link: "https://www.twitter.com/ajanraj25/",
-    name: "mdi:twitter",
-  },
-  {
-    friendlyName: "LinkedIn",
-    link: "https://www.linkedin.com/in/ajanraj/",
-    name: "mdi:linkedin",
-  },
-  {
-    friendlyName: "email",
-    isWebmention: true,
-    link: "mailto:cx8jm6xg@duck.com",
-    name: "mdi:email",
-  },
+	{
+		friendlyName: "Github",
+		link: "https://github.com/ajanraj/",
+		name: "simple-icons:github",
+	},
+	{
+		friendlyName: "Twitter",
+		link: "https://www.twitter.com/ajanraj25/",
+		name: "simple-icons:x",
+	},
+	{
+		friendlyName: "LinkedIn",
+		link: "https://www.linkedin.com/in/ajanraj/",
+		name: "simple-icons:linkedin",
+	},
+	{
+		friendlyName: "vsco",
+		link: "https://vsco.co/ajanraj25/",
+		name: "simple-icons:vsco",
+	},
+	{
+		friendlyName: "email",
+		isWebmention: true,
+		link: "mailto:cx8jm6xg@duck.com",
+		name: "simple-icons:gmail",
+	},
 ];
 ---
 
@@ -42,12 +47,12 @@ const socialLinks: {
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
 				<li class="flex">
 					<a
-						class="inline-block p-1 sm:hover:text-link"
+						class="inline-block  p-1 sm:hover:text-link"
 						href={link}
 						rel={`noopener noreferrer ${isWebmention ? "me authn" : ""}`}
 						target="_blank"
 					>
-						<Icon aria-hidden="true" class="h-6 w-6" focusable="false" name={name} />
+						<Icon aria-hidden="true" class="h-6 w-6 pt-1" focusable="false" name={name} />
 						<span class="sr-only">{friendlyName}</span>
 					</a>
 				</li>
