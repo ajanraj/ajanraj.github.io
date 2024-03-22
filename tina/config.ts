@@ -4,6 +4,22 @@ import { defineConfig } from "tinacms";
 const branch =
 	process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
 
+function getDaySuffix(day) {
+	if (day >= 11 && day <= 13) {
+		return "th";
+	}
+	switch (day % 10) {
+		case 1:
+			return "st";
+		case 2:
+			return "nd";
+		case 3:
+			return "rd";
+		default:
+			return "th";
+	}
+}
+
 export default defineConfig({
 	branch,
 
@@ -33,7 +49,11 @@ export default defineConfig({
 					return {
 						// When a new post is created the title field will be set to "New post"
 						title: "New Post",
-						description: "What happened in my life on 18th March 2024. A short recap",
+						description:
+							"What happened in my life on " +
+							new Date().getDate() +
+							getDaySuffix(new Date().getDate()) +
+							" March 2024. A short recap",
 						publishDate: new Date().toISOString(),
 						updatedDate:
 							new Date().getDate() +
@@ -51,6 +71,8 @@ export default defineConfig({
 							new Date().toLocaleString("default", { month: "long" }).toLowerCase(),
 							String(new Date().getFullYear()),
 						],
+
+						body: {},
 					};
 				},
 				ui: {
