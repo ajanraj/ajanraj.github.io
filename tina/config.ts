@@ -53,7 +53,11 @@ export default defineConfig({
 							"What happened in my life on " +
 							new Date().getDate() +
 							getDaySuffix(new Date().getDate()) +
-							" March 2024. A short recap",
+							" " +
+							new Date().toLocaleString("default", { month: "long" }) +
+							" " +
+							new Date().getFullYear() +
+							". A short recap",
 						publishDate: new Date().toISOString(),
 						updatedDate:
 							new Date().getDate() +
@@ -61,11 +65,19 @@ export default defineConfig({
 							new Date().toLocaleString("default", { month: "short" }) +
 							" " +
 							new Date().getFullYear(),
-						filename_gen:
+						filename_year: new Date().getFullYear(),
+						filename_month: new Date().toLocaleString("default", { month: "long" }),
+						filename_date:
 							new Date().toLocaleString("default", { month: "long" }) +
 							"-" +
 							new Date().getDate() +
 							"-" +
+							new Date().toLocaleString("default", { year: "2-digit" }),
+						filename_name:
+							new Date().toLocaleString("default", { month: "long" }) +
+							"_" +
+							new Date().getDate() +
+							"_" +
 							new Date().toLocaleString("default", { year: "2-digit" }),
 						tags: [
 							new Date().toLocaleString("default", { month: "long" }).toLowerCase(),
@@ -80,7 +92,7 @@ export default defineConfig({
 						readonly: false,
 						slugify: (values) => {
 							// Values is an object containing all the values of the form. In this case it is {title?: string, topic?: string}
-							return `${values?.filename_gen?.replace(/[^a-z^A-Z^0-9]/g, "-") || "no-topic"}/index`;
+							return `${values?.filename_year}/${values?.filename_month}/${values?.filename_date?.replace(/[^a-z^A-Z^0-9]/g, "-") || "no-topic"}/${values?.filename_name}`;
 						},
 					},
 				},
