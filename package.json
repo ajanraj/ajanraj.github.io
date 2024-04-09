@@ -34,7 +34,7 @@
 		"@resvg/resvg-js": "^2.6.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/typography": "^0.5.12",
-		"@tinacms/cli": "^1.5.42",
+		"@tinacms/cli": "^1.5.43",
 		"@types/eslint": "^8.56.5",
 		"@types/node": "^20.11.29",
 		"@typescript-eslint/eslint-plugin": "^7.6.0",
