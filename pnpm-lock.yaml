@@ -140,8 +140,8 @@ devDependencies:
     specifier: 0.13.0
     version: 0.13.0
   prettier-plugin-tailwindcss:
-    specifier: ^0.5.13
-    version: 0.5.13(prettier-plugin-astro@0.13.0)(prettier@3.2.5)
+    specifier: ^0.6.1
+    version: 0.6.1(prettier-plugin-astro@0.13.0)(prettier@3.2.5)
   reading-time:
     specifier: ^1.5.0
     version: 1.5.0
@@ -1905,8 +1905,8 @@ packages:
       tslib: 2.4.1
     dev: true
 
-  /@graphql-codegen/plugin-helpers@5.0.3(graphql@15.8.0):
-    resolution: {integrity: sha512-yZ1rpULIWKBZqCDlvGIJRSyj1B2utkEdGmXZTBT/GVayP4hyRYlkd36AJV/LfEsVD8dnsKL5rLz2VTYmRNlJ5Q==}
+  /@graphql-codegen/plugin-helpers@5.0.4(graphql@15.8.0):
+    resolution: {integrity: sha512-MOIuHFNWUnFnqVmiXtrI+4UziMTYrcquljaI5f/T/Bc7oO7sXcfkAvgkNWEEi9xWreYwvuer3VHCuPI/lAFWbw==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
@@ -1924,7 +1924,7 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.3(graphql@15.8.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@15.8.0)
       '@graphql-tools/utils': 10.1.2(graphql@15.8.0)
       graphql: 15.8.0
       tslib: 2.6.2
@@ -1952,7 +1952,7 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.3(graphql@15.8.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@15.8.0)
       '@graphql-codegen/typescript': 4.0.6(graphql@15.8.0)
       '@graphql-codegen/visitor-plugin-common': 5.1.0(graphql@15.8.0)
       auto-bind: 4.0.0
@@ -1968,7 +1968,7 @@ packages:
     peerDependencies:
       graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.3(graphql@15.8.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@15.8.0)
       '@graphql-codegen/schema-ast': 4.0.2(graphql@15.8.0)
       '@graphql-codegen/visitor-plugin-common': 5.1.0(graphql@15.8.0)
       auto-bind: 4.0.0
@@ -2005,7 +2005,7 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.3(graphql@15.8.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@15.8.0)
       '@graphql-tools/optimize': 2.0.0(graphql@15.8.0)
       '@graphql-tools/relay-operation-optimizer': 7.0.1(graphql@15.8.0)
       '@graphql-tools/utils': 10.1.2(graphql@15.8.0)
@@ -2026,7 +2026,7 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.3(graphql@15.8.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@15.8.0)
       '@graphql-tools/optimize': 2.0.0(graphql@15.8.0)
       '@graphql-tools/relay-operation-optimizer': 7.0.1(graphql@15.8.0)
       '@graphql-tools/utils': 10.1.2(graphql@15.8.0)
@@ -4478,7 +4478,7 @@ packages:
     hasBin: true
     dependencies:
       '@graphql-codegen/core': 2.6.8(graphql@15.8.0)
-      '@graphql-codegen/plugin-helpers': 5.0.3(graphql@15.8.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@15.8.0)
       '@graphql-codegen/typescript': 4.0.6(graphql@15.8.0)
       '@graphql-codegen/typescript-generic-sdk': 3.1.0(graphql-tag@2.12.6)(graphql@15.8.0)
       '@graphql-codegen/typescript-operations': 4.2.0(graphql@15.8.0)
@@ -14628,8 +14628,8 @@ packages:
       sass-formatter: 0.7.9
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.13(prettier-plugin-astro@0.13.0)(prettier@3.2.5):
-    resolution: {integrity: sha512-2tPWHCFNC+WRjAC4SIWQNSOdcL1NNkydXim8w7TDqlZi+/ulZYz2OouAI6qMtkggnPt7lGamboj6LcTMwcCvoQ==}
+  /prettier-plugin-tailwindcss@0.6.1(prettier-plugin-astro@0.13.0)(prettier@3.2.5):
+    resolution: {integrity: sha512-AnbeYZu0WGj+QgKciUgdMnRxrqcxltleZPgdwfA5104BHM3siBLONN/HLW1yS2HvzSNkzpQ/JAj+LN0jcJO+0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
