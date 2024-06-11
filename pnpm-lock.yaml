@@ -21,8 +21,8 @@ dependencies:
     specifier: 5.1.0
     version: 5.1.0(astro@4.9.2)(tailwindcss@3.4.3)
   '@iconify-json/simple-icons':
-    specifier: ^1.1.99
-    version: 1.1.99
+    specifier: ^1.1.105
+    version: 1.1.105
   astro:
     specifier: 4.9.2
     version: 4.9.2(@types/node@20.12.6)(typescript@5.4.4)
@@ -2285,8 +2285,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/simple-icons@1.1.99:
-    resolution: {integrity: sha512-/csVihX/ztkl2j4Vk4JoEJv8DdQHrZafzC5QHe21Y+ztuVglvavjb4yWEn9KQHTitLH2fIMnP8+RSTxu5kdmtw==}
+  /@iconify-json/simple-icons@1.1.105:
+    resolution: {integrity: sha512-eSI32492Ga6IR7BhpDy222pSupqshZIVuYllaYHDO0MjmgVvfus5wgXb/U8RXpMZTpcQ/8dNcCK82LkupFqD4w==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
