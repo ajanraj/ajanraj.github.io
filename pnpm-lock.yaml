@@ -55,8 +55,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.0(prettier-plugin-astro@0.13.0)(prettier@3.3.2)(typescript@5.4.5)
       '@iconify-json/mdi':
-        specifier: ^1.1.66
-        version: 1.1.66
+        specifier: ^1.1.67
+        version: 1.1.67
       '@pagefind/default-ui':
         specifier: ^1.1.0
         version: 1.1.0
@@ -1243,8 +1243,8 @@ packages:
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
-  '@iconify-json/mdi@1.1.66':
-    resolution: {integrity: sha512-7KPF2RVUUWav/hXCM8Ti/smqu3cmgePJpiX9CSkldiL+80+eBRBeKlc4vPOc9jhAItlqIU1vKsbKoPP0JIfgbg==}
+  '@iconify-json/mdi@1.1.67':
+    resolution: {integrity: sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==}
 
   '@iconify-json/simple-icons@1.1.105':
     resolution: {integrity: sha512-eSI32492Ga6IR7BhpDy222pSupqshZIVuYllaYHDO0MjmgVvfus5wgXb/U8RXpMZTpcQ/8dNcCK82LkupFqD4w==}
@@ -8818,7 +8818,7 @@ snapshots:
 
   '@iarna/toml@2.2.5': {}
 
-  '@iconify-json/mdi@1.1.66':
+  '@iconify-json/mdi@1.1.67':
     dependencies:
       '@iconify/types': 2.0.0
 
