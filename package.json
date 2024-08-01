@@ -17,7 +17,7 @@
 		"@astrojs/rss": "4.0.5",
 		"@astrojs/sitemap": "3.1.5",
 		"@astrojs/tailwind": "5.1.0",
-		"@iconify-json/simple-icons": "^1.1.105",
+		"@iconify-json/simple-icons": "^1.1.111",
 		"astro": "4.9.2",
 		"astro-expressive-code": "^0.33.5",
 		"astro-icon": "^1.1.0",
