@@ -33,7 +33,7 @@
 		"@pagefind/default-ui": "^1.1.0",
 		"@resvg/resvg-js": "^2.6.2",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
-		"@tailwindcss/typography": "^0.5.13",
+		"@tailwindcss/typography": "^0.5.15",
 		"@tinacms/cli": "^1.5.46",
 		"@types/eslint": "^8.56.10",
 		"@types/node": "^22.5.2",
