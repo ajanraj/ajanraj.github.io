@@ -12,7 +12,7 @@
 		"check": "astro check"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "2.2.4",
+		"@astrojs/mdx": "3.1.5",
 		"@astrojs/partytown": "^2.1.1",
 		"@astrojs/rss": "4.0.5",
 		"@astrojs/sitemap": "3.1.6",
