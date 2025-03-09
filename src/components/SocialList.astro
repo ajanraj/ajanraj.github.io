@@ -12,27 +12,43 @@ const socialLinks: {
 	link: string;
 	name: string;
 }[] = [
-	{
+{
 		friendlyName: "Github",
-		link: "https://github.com/chrismwilliams/astro-cactus",
-		name: "mdi:github",
+		link: "https://github.com/ajanraj/",
+		name: "simple-icons:github",
+	},
+	{
+		friendlyName: "Twitter",
+		link: "https://www.twitter.com/ajanraj25/",
+		name: "simple-icons:x",
+	},
+	{
+		friendlyName: "LinkedIn",
+		link: "https://www.linkedin.com/in/ajanraj/",
+		name: "simple-icons:linkedin",
+	},
+	{
+		friendlyName: "email",
+		isWebmention: true,
+		link: "mailto:cx8jm6xg@duck.com",
+		name: "simple-icons:gmail",
 	},
 ];
 ---
 
-<div class="flex flex-wrap items-end gap-x-2">
+<div class="flex flex-wrap items-end gap-x-4">
 	<p>Find me on</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
 				<li class="flex">
 					<a
-						class="hover:text-link inline-block"
+						class="sm:hover:text-link p-1 inline-block"
 						href={link}
 						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
 						target="_blank"
 					>
-						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
+						<Icon aria-hidden="true" class="h-6 w-6 pt-1" focusable="false" name={name} />
 						<span class="sr-only">{friendlyName}</span>
 					</a>
 				</li>

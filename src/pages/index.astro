@@ -18,15 +18,64 @@ const allPostsByDate = allPosts
 const MAX_NOTES = 5;
 const allNotes = await getCollection("note");
 const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
+const quotes: { desc: string; href: string; title: string }[] = [
+	{
+		desc: "Going to bed at night saying I've done something wonderful, that's what matters to me.",
+		href: "https://amzn.to/3T9Qrz7",
+		title: "Steve Jobs",
+	},
+	{
+		desc: "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking.",
+		href: "https://amzn.to/3T9Qrz7",
+		title: "Steve Jobs",
+	},
+	{
+		desc: "There is nothing impossible to him who will try.",
+		href: "https://amzn.to/3Vg7DWa",
+		title: "Alexander the Great",
+	},
+	{
+		desc: "We suffer more often in imagination than in reality.",
+		href: "https://amzn.to/3TaLbv2",
+		title: "Seneca",
+	},
+	{
+		desc: "If a man knows not to which port he sails, no wind is favorable.",
+		href: "https://amzn.to/3TaLbv2",
+		title: "Seneca",
+	},
+	{
+		desc: "Waste no more time arguing what a good man should be. Be One.",
+		href: "https://amzn.to/49KeHPh",
+		title: "Marcus Aurelius",
+	},
+	{
+		desc: "It never ceases to amaze me: We all love ourselves more than other people, but care more about their opinion than our own.",
+		href: "https://amzn.to/49KeHPh",
+		title: "Marcus Aurelius",
+	},
+	{
+		desc: "Don’t tell people how to do things, tell them what to do and let them surprise you with their results.",
+		href: "https://amzn.to/3TrdUNr",
+		title: "Phil Knight",
+	},
+	{
+		desc: "You know, sometimes all you need is twenty seconds of insane courage. Just literally twenty seconds of just embarrassing bravery. And I promise you, something great will come of it.",
+		href: " ",
+		title: "Benjamin Mee",
+	},
+];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
 		<h1 class="title mb-6">Hello World!</h1>
-		<p class="mb-4">
-			Hi, I’m a theme for Astro, a simple starter that you can use to create your website or blog.
-			If you want to know more about how you can customise me, add more posts, and make it your own,
-			click on the GitHub icon link below and it will take you to my repo.
+		<p class="mb-4 text-justify">
+			I’m Ajan. When I'm not busy being a coding wizard or winning accolades in tech, you'll find me
+			battling in virtual worlds, wandering in unknown places with my camera in hand, or learning
+			something new just for the fun of it. My travel tales are as colorful as my code, and every
+			photograph I take has a story as complex as my algorithms. It's all about finding the perfect
+			balance between pixels, places, and programming!
 		</p>
 		<SocialList />
 	</section>
@@ -58,4 +107,24 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 			</section>
 		)
 	}
+		<section class="mt-16">
+			<h2 class="title mb-4 text-xl">Some Quotes I Like</h2>
+			<dl class="space-y-4">
+				{
+					quotes.map(({ desc, href, title }) => (
+						<div class="flex flex-col gap-2 text-justify md:flex-row">
+							<dt>
+								<span class="flex text-nowrap">
+									<a class="cactus-link" href={href} rel="noopener noreferrer" target="_blank">
+										{title}
+									</a>
+									:
+								</span>
+							</dt>
+							<dd>{desc}</dd>
+						</div>
+					))
+				}
+			</dl>
+		</section>
 </PageLayout>
