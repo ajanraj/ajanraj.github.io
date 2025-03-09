@@ -183,3 +183,4 @@ export default defineConfig({
 		maxSearchIndexFieldLength: 100,
 	},
 });
+ 
