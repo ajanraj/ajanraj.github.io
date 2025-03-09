@@ -23,10 +23,21 @@ import rehypeUnwrapImages from "rehype-unwrap-images";
 
 // https://astro.build/config
 export default defineConfig({
-	site: siteConfig.url,
-	image: {
-		domains: ["webmention.io"],
-	},
+site: siteConfig.url,
+image: {
+domains: ["webmention.io"],
+service: {
+entrypoint: "astro/assets/services/sharp",
+config: {
+quality: 80,
+},
+},
+},
+output: "static",
+build: {
+inlineStylesheets: "auto",
+assets: "preserve",
+},
 	integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
@@ -115,8 +126,8 @@ function rawFonts(ext: string[]) {
 				return {
 					code: `export default ${JSON.stringify(buffer)}`,
 					map: null,
-				};
-			}
-		},
-	};
+};
+}
+},
+};
 }

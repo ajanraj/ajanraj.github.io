@@ -16,17 +16,22 @@ const {
 } = Astro.props;
 ---
 
-<html class="scroll-smooth" lang={siteConfig.lang}>
+<html class="scroll-smooth" lang={siteConfig.lang} transition:animate="none">
 	<head>
-		<BaseHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
+<BaseHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
 
-		<meta name="google-site-verification" content="IROpR4td_dUwU-4vr9Do8j8F2mYYqsx2ls4YjLhixC8" />
+<meta name="view-transition" content="same-origin" />
+<meta name="google-site-verification" content="IROpR4td_dUwU-4vr9Do8j8F2mYYqsx2ls4YjLhixC8" />
+
+<!-- Preload critical resources -->
+<link rel="preload" href="/src/assets/roboto-mono-regular.ttf" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/src/assets/roboto-mono-700.ttf" as="font" type="font/ttf" crossorigin />
 		<!-- Cloudflare Web Analytics -->
 		<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3bf2ad8b7cde48938f7a1afd68bd2613"}'></script>
 		<!-- End Cloudflare Web Analytics -->
 	</head>
 	<body
-		class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 font-mono text-sm font-normal antialiased sm:px-8"
+		class="bg-global-bg text-global-text mx-auto flex min-h-screen max-w-3xl flex-col px-4 pt-16 font-mono text-sm font-normal antialiased sm:px-8" transition:animate="slide"
 	>
 		<ThemeProvider />
 		<SkipLink />
