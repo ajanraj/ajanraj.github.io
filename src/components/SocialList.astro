@@ -12,7 +12,7 @@ const socialLinks: {
 	link: string;
 	name: string;
 }[] = [
-{
+	{
 		friendlyName: "Github",
 		link: "https://github.com/ajanraj/",
 		name: "simple-icons:github",
@@ -30,7 +30,7 @@ const socialLinks: {
 	{
 		friendlyName: "email",
 		isWebmention: true,
-		link: "mailto:cx8jm6xg@duck.com",
+		link: "mailto:contact@ajanraj.com",
 		name: "simple-icons:gmail",
 	},
 ];
@@ -43,7 +43,7 @@ const socialLinks: {
 			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
 				<li class="flex">
 					<a
-						class="sm:hover:text-link p-1 inline-block"
+						class="sm:hover:text-link inline-block p-1"
 						href={link}
 						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
 						target="_blank"
