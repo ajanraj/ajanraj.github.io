@@ -30,6 +30,7 @@ service: {
 entrypoint: "astro/assets/services/sharp",
 config: {
 quality: 80,
+stripMetadata: true,
 },
 },
 },
