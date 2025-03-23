@@ -4,7 +4,7 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
 import { menuLinks } from "@/site.config";
 ---
 
-<header class="group relative mb-20 flex items-center sm:ps-[4.5rem]" id="main-header">
+<header class="group relative mb-28 flex items-center sm:ps-18" id="main-header">
 	<div class="flex sm:flex-col">
 		<a
 			aria-current={Astro.url.pathname === "/" ? "page" : false}
@@ -382,11 +382,10 @@ import { menuLinks } from "@/site.config";
 						<path
 							style="clip-path:url(#SVGID_00000020368905293631505490000018342650058112704422_);fill:#020202;"
 							d="M495.47,591.75
-			c8.24,1.63,16.53,3.14,24.93,3.78c-1,8.44-1.71,16.91-2.6,25.37c-9.48-0.55-18.92-1.72-28.26-3.41
-			C491.47,608.9,493.61,600.36,495.47,591.75 M489.31,582.38l-1.66,7.68c-1.05,4.85-2.21,9.8-3.34,14.58
-			c-0.86,3.63-1.74,7.38-2.57,11.09l-1.83,8.14l8.21,1.49c9.87,1.79,19.7,2.97,29.22,3.52l7.62,0.44l0.8-7.59
-			c0.34-3.26,0.66-6.57,0.97-9.76c0.5-5.1,1.01-10.37,1.62-15.51l0.98-8.28l-8.32-0.63c-8.3-0.63-16.73-2.22-23.98-3.65
-			L489.31,582.38z"
+			c8.24,1.63,16.53,3.14,24.93,3.78c-1,8.44-4.06,17.29-5.98,25.96c-8.61-2.2-17.38-4.73-24.75-9.87
+			C463.23,598.97,467.38,591.72,472.02,584.8 M468.75,575.32l-3.37,5.03c-5.22,7.79-9.43,15.3-12.85,22.96l-2.7,6.04l5.43,3.79
+			c8.5,5.93,18.17,8.71,27.35,11.06l8.01,2.05l1.79-8.07c0.85-3.85,1.78-7.78,2.68-11.58c1.11-4.71,2.27-9.57,3.31-14.43l1.59-7.43
+			l-7.34-1.97c-6.11-1.64-12.22-3.63-18.14-5.56L468.75,575.32z"
 						></path>
 						<path
 							style="clip-path:url(#SVGID_00000020368905293631505490000018342650058112704422_);fill:#FFFFFF;"
@@ -505,14 +504,14 @@ import { menuLinks } from "@/site.config";
 		</a>
 		<nav
 			aria-label="Main menu"
-			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+			class="bg-global-bg/90 text-accent sm:divide-accent absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md py-4 shadow backdrop-blur-md group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
 			id="navigation-menu"
 		>
 			{
 				menuLinks.map((link) => (
 					<a
 						aria-current={Astro.url.pathname === link.path ? "page" : false}
-						class="px-4 py-4 sm:py-0 sm:hover:underline"
+						class="px-4 py-4 underline-offset-2 hover:underline sm:py-0"
 						data-astro-prefetch
 						href={link.path}
 					>
@@ -549,7 +548,7 @@ import { menuLinks } from "@/site.config";
 			</svg>
 			<svg
 				aria-hidden="true"
-				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
+				class="text-accent absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
 				class="text-accent"
 				fill="none"
 				focusable="false"
