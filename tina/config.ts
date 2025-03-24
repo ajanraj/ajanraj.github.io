@@ -4,7 +4,7 @@ import { defineConfig } from "tinacms";
 const branch =
 	process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
 
-function getDaySuffix(day) {
+function getDaySuffix(day: number) {
 	if (day >= 11 && day <= 13) {
 		return "th";
 	}
@@ -24,9 +24,9 @@ export default defineConfig({
 	branch,
 
 	// Get this from tina.io
-	clientId: process.env.TINA_PUBLIC_CLIENT_ID,
+	clientId: process.env.TINA_PUBLIC_CLIENT_ID || null,
 	// Get this from tina.io
-	token: process.env.TINA_TOKEN,
+	token: process.env.TINA_TOKEN || null,
 
 	build: {
 		outputFolder: "admin",
@@ -104,11 +104,12 @@ export default defineConfig({
 						isTitle: true,
 						required: true,
 						ui: {
-							validate: (value, data) => {
+							validate: (_value, data) => {
 								const lengthOfTitle = data?.title?.length || 0;
 								if (lengthOfTitle >= 60) {
 									return "The description must be shorter than 60 characters";
 								}
+								return ""
 							},
 						},
 					},
@@ -118,13 +119,14 @@ export default defineConfig({
 						label: "Description",
 						required: true,
 						ui: {
-							validate: (value, data) => {
+							validate: (_value, data) => {
 								const lengthOfDescription = data?.description?.length || 0;
 								if (lengthOfDescription <= 50) {
 									return "The description must be longer than 50 characters";
 								} else if (lengthOfDescription >= 160) {
 									return "The description must be shorter than 160 characters";
 								}
+								return ""
 							},
 						},
 					},
@@ -176,11 +178,10 @@ export default defineConfig({
 	},
 	search: {
 		tina: {
-			indexerToken: process.env.TINASEARCH,
+			indexerToken: process.env.TINASEARCH || "null",
 			stopwordLanguages: ["eng"],
 		},
 		indexBatchSize: 50,
 		maxSearchIndexFieldLength: 100,
 	},
-});
- 
+})
