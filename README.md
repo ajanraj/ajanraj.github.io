@@ -4,4 +4,4 @@ Hello, welcome. This is a blog, or digital dump, or whatever. It's built with [A
 
 ## See the blahg
 
-[ajanraj.github.io](https://ajanraj.github.io)
+[ajanraj.com](https://ajanraj.com)
