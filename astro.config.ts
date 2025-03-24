@@ -28,13 +28,6 @@ export default defineConfig({
 site: siteConfig.url,
 image: {
 domains: ["webmention.io"],
-service: {
-entrypoint: "astro/assets/services/sharp",
-config: {
-quality: 80,
-stripMetadata: true,
-},
-},
 },
 output: "static",
 build: {
@@ -119,7 +112,7 @@ assets: "preserve",
         optimizeDeps: {
             exclude: ["@resvg/resvg-js"],
         },
-        plugins: [tailwind(), rawFonts([".ttf", ".woff"])],
+        plugins: [tailwind(), rawFonts([".ttf", ".woff"])] as any,
     },
     env: {
         schema: {
