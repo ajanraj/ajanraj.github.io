@@ -21,20 +21,21 @@ jobs:
       - name: install node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: 1.0.26
+          cache: true
 
       - name: Install dependencies
         run: bun install
 
-        # use astro check for issues
+      # use astro check for issues
       - name: Run check
         run: bun run check
 
-        # ensure build works
+      # ensure build works
       - name: Run build
         run: bun run build
