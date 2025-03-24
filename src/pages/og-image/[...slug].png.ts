@@ -66,7 +66,7 @@ export async function GET(context: APIContext) {
 		month: "long",
 		weekday: "long",
 	});
-	const svg = await satori(markup(title, postDate), ogOptions);
+	const svg = await satori(markup(title, postDate) as unknown as React.ReactNode, ogOptions);
 	const png = new Resvg(svg).render().asPng();
 	return new Response(png, {
 		headers: {
