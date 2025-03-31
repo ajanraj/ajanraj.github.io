@@ -4,6 +4,7 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+enable-beta-ecosystems: true
 updates:
   - package-ecosystem: "bun" # See documentation for possible values
     directory: "/" # Location of package manifests
@@ -12,4 +13,3 @@ updates:
     allow:
       - dependency-type: "direct"
     open-pull-requests-limit: 20
-    enable-beta-ecosystems: true
