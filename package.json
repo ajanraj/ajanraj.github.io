@@ -22,7 +22,7 @@
     "@astrojs/sitemap": "3.2.1",
     "@iconify-json/simple-icons": "^1.2.30",
     "@playform/compress": "0.1.7",
-    "@tailwindcss/vite": "4.0.0-beta.8",
+    "@tailwindcss/vite": "4.0.17",
     "astro": "5.4.2",
     "astro-expressive-code": "^0.39.0",
     "astro-icon": "^1.1.5",
