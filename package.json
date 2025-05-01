@@ -23,7 +23,7 @@
     "@iconify-json/simple-icons": "^1.2.30",
     "@playform/compress": "0.1.7",
     "@tailwindcss/vite": "4.0.0-beta.8",
-    "astro": "5.4.2",
+    "astro": "5.7.10",
     "astro-expressive-code": "^0.39.0",
     "astro-icon": "^1.1.5",
     "astro-robots-txt": "^1.0.0",
