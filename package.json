@@ -39,7 +39,7 @@
     "remark-directive": "^3.0.1",
     "satori": "0.12.1",
     "satori-html": "^0.3.2",
-    "tinacms": "^2.7.3",
+    "tinacms": "^2.7.5",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.0.0"
   },
