@@ -20,7 +20,7 @@
     "@astrojs/mdx": "4.1.0",
     "@astrojs/rss": "4.0.11",
     "@astrojs/sitemap": "3.2.1",
-    "@iconify-json/simple-icons": "^1.2.30",
+    "@iconify-json/simple-icons": "^1.2.33",
     "@playform/compress": "0.1.7",
     "@tailwindcss/vite": "4.0.0-beta.8",
     "astro": "5.4.2",
